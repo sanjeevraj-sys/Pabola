@@ -4,6 +4,7 @@ import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, AreaChart, Area, XAx
 import { LayoutDashboard, PieChart as PieChartIcon, ArrowLeftRight, Settings, Plus, Wallet, TrendingUp, DollarSign, Activity } from 'lucide-react';
 
 export default function Home() {
+  const [currentView, setCurrentView] = useState('Dashboard');
   const [activeTab, setActiveTab] = useState('All');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [newAsset, setNewAsset] = useState({ ticker: '', name: '', category: 'Stocks', shares: '', buyPrice: '', currentPrice: '' });
