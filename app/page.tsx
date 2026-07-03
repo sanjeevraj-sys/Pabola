@@ -235,7 +235,7 @@ export default function Home() {
                   <Tooltip 
                     contentStyle={{ backgroundColor: '#171717', borderColor: '#262626', borderRadius: '12px' }}
                     itemStyle={{ color: '#fff' }}
-                    formatter={(val: number) => [`$${val.toLocaleString(undefined, {maximumFractionDigits: 0})}`, 'Balance']}
+                    formatter={(val: any) => [`$${val.toLocaleString(undefined, {maximumFractionDigits: 0})}`, 'Balance']}
                   />
                   <Area type="monotone" dataKey="balance" stroke="#6366f1" strokeWidth={3} fillOpacity={1} fill="url(#colorBalance)" />
                 </AreaChart>
@@ -261,7 +261,7 @@ export default function Home() {
                        ))}
                      </Pie>
                      <Tooltip 
-                       formatter={(value: number) => `$${value.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0})}`}
+                       formatter={(value: any) => `$${value.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0})}`}
                        contentStyle={{ backgroundColor: '#171717', borderColor: '#262626', borderRadius: '12px' }}
                        itemStyle={{ color: '#fff', fontSize: '14px' }}
                      />
